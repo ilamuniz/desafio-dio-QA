@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWAGDIO</projectKey>
+    <exportDate>2022-11-09 21:43:19 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="56085490" key="SWAGDIO-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ila Mascarenhas Muniz</createdBy>
+            <createdOn>2022-11-09 21:03:31 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente precisa redefinir senha]]></name>
+            <objective><![CDATA[Permitir que o usu&aacute;rio possa acessar a p&aacute;gina de login, cadastro e recupera&ccedil;&atilde;o de senha]]></objective>
+            <owner>70121:779dc3bb-3335-4c57-a2c5-8111e4eefe58</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar p&aacute;gina de login da loja virtual]]></description>
+                        <expectedResult><![CDATA[Exibida p&aacute;gina inicial com op&ccedil;&otilde;es de login, cadastro e recupera&ccedil;&atilde;o de senha]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o &quot;criar nova conta&quot;]]></description>
+                        <expectedResult><![CDATA[P&aacute;gina deve redirecionar para tela de cadastro]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o &quot;esqueci minha senha&quot;]]></description>
+                        <expectedResult><![CDATA[P&aacute;gina deve redirecionar para tela de recupera&ccedil;&atilde;o de senha]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="56085680" key="SWAGDIO-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ila Mascarenhas Muniz</createdBy>
+            <createdOn>2022-11-09 21:14:04 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>SWAGDIO-8</key>
+                    <summary><![CDATA[Integração de opções de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Oferecer várias formas de pagamento]]></name>
+            <objective><![CDATA[Permitir que o cliente possa escolher a melhor forma de pagamento]]></objective>
+            <owner>70121:779dc3bb-3335-4c57-a2c5-8111e4eefe58</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o usuário adicionou itens no carrinho de compras
+And ele quiser finalizar a compra
+When ele clicar no carrinho de compras
+Then ele deve ser direcionado para a página que oferece opções de pagamento por cartão, boleto ou pix]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
